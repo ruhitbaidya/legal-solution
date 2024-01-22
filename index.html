@@ -49,7 +49,7 @@
             <div class="logo">
               <img src="./images/logo2.png" alt="" />
             </div>
-            <div class="menu-item">
+            <div class="menu-item hidden  lg:flex">
               <ul class="flex space-x-7">
                 <li><a href="">Home</a></li>
                 <li><a href="">Services</a> ></li>
@@ -58,12 +58,24 @@
                 <li><a href="">Contact Us</a> ></li>
               </ul>
             </div>
-            <div class="freebutton">
+            <div class="freebutton hidden lg:flex">
               <button
                 class="px-[30px] py-[18px] bg-[#B68C5A] text-[#FFF] font-[600] rounded-lg"
               >
                 Free Consultation
               </button>
+            </div>
+            <div class="dropdown lg:hidden">
+              <div tabindex="0" role="button" class="btn btn-ghost">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+              </div>
+              <ul tabindex="0" class=" dropdown-content mt-3  shadow bg-base-100 rounded-box">
+                <li>Home</li>
+                <li>Home</li>
+                <li>Home</li>
+                <li>Home</li>
+                <li>Home</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -73,8 +85,8 @@
           class="bg-[url(./images/banner.png)] bg-no-repeat bg-cover text-center rounded-lg"
         >
           <div class="bg-adding rounded-lg py-[104px]">
-            <div class="w-[60%] mx-auto">
-              <h1 class="text-[#fff] text-[72px] font-[heading] font-[800]">
+            <div class="w-[90%] lg:w-[60%] mx-auto">
+              <h1 class="text-[#fff] text-[42px] lg:text-[72px] font-[heading] font-[800]">
                 We Provide Effective Legal Solutions
               </h1>
               <p class="text-[#E7E7E7] mt-[24px] mb-[32px]">
@@ -82,7 +94,7 @@
                 but the majority have suffered alteration in some form, by
                 injected humour.
               </p>
-              <div class="flex gap-[24px]">
+              <div class="flex gap-[5px] md:gap-[24px]">
                 <input
                   class="w-[100%] px-6 rounded-lg focus:outline-none"
                   type="text"
@@ -102,7 +114,7 @@
     <main>
       <section class="container mx-auto px-4 lg:px-6">
         <div class="legal-areas py-[100px]">
-          <div class="w-[60%] text-center mx-auto">
+          <div class="w-[90%] md:w-[60%] text-center mx-auto">
             <h2
               class="text-[40px] font-[heading] font-[800] mb-[24px] text-[#414040]"
             >
@@ -256,7 +268,7 @@
       </section>
       <section>
         <div class="container mx-auto px-4 lg:px-6 my-[100px]">
-          <div class="w-[60%] mx-auto text-center">
+          <div class="w-[90%] md:w-[60%] mx-auto text-center">
             <h2 class="text-[40px] mb-[24px]">What Our Client Say</h2>
             <p class="mb-[64px] text-[#707070]">
               There are many variations of passages of Lorem Ipsum available,
@@ -266,7 +278,7 @@
           </div>
           <div class="slider-part relative">
             <div
-              class="carousel bg-[url(./images/banner.png)] bg-no-repeat bg-cover py-[80px]"
+              class="carousel container bg-[url(./images/banner.png)] bg-no-repeat bg-cover py-[80px]"
             >
               <div id="slide1" class="carousel-item relative w-full">
                 <div class="w-[70%] mx-auto text-white">
@@ -422,7 +434,7 @@
       </section>
       <section>
         <div class="container mx-auto px-4 lg:px-6 my-[100px]">
-          <div class="w-[70%] mx-auto text-center">
+          <div class="w-[90%] md:w-[60%] mx-auto text-center">
             <h2 class="text-[40px] font-[800] font-[heading] mb-[24px]">
               Frequently Asked Any Questions
             </h2>
@@ -432,8 +444,8 @@
               injected humour.
             </p>
           </div>
-          <div class="flex mt-[60px] gap-[20px] items-center">
-            <div class="flex-1 space-y-6">
+          <div class="flex flex-col lg:flex-row mt-[60px] gap-[20px] items-center">
+            <div class="w-[100%] lg:w-[50%] space-y-6">
               <div class="collapse collapse-plus bg-base-200">
                 <input type="radio" name="my-accordion-3" checked="checked" />
                 <div class="collapse-title text-xl font-medium">
@@ -480,7 +492,7 @@
                 </div>
               </div>
             </div>
-            <div class="flex-1">
+            <div class="w-[100%] lg:w-[50%]">
               <img src="./images/faq.png" alt="" />
             </div>
           </div>
@@ -488,7 +500,7 @@
       </section>
       <section>
         <div class="container mx-auto px-4 lg:px-6 my-[100px]">
-          <div class="w-[70%] mx-auto text-center">
+          <div class="w-[90%] md:w-[60%] mx-auto text-center">
             <h2 class="text-[40px] font-[800] mb-[24px]">Contact With Us</h2>
             <p class="text-[#707070]">
               There are many variations of passages of Lorem Ipsum available,
@@ -496,9 +508,9 @@
               injected humour.
             </p>
           </div>
-          <div class="flex gap-[30px] items-center mt-[50px]">
-            <div class="contact-info flex-1">
-              <div class="grid grid-cols-2 gap-[1px] bg-[#CFCFCF]">
+          <div class="flex flex-col lg:flex-row gap-[30px] items-center mt-[50px]">
+            <div class="contact-info w-[100%] lg:w-[50%]">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-[1px] bg-[#CFCFCF]">
                 <div class="p-[60px] text-center bg-[#F3F3F3]">
                   <div class="flex justify-center">
                     <img src="./images/location.png" alt="" />
@@ -554,8 +566,8 @@
                 </div>
               </div>
             </div>
-            <div class="flex-1">
-              <form action="" class="flex flex-col space-y-7">
+            <div class="w-[100%] lg:w-[50%]">
+              <div  class="flex flex-col space-y-7 ">
                 <input
                   class="bg-[#F3F3F3] p-[23px] rounded-lg focus:outline-none"
                   type="text"
@@ -584,7 +596,7 @@
                 >
                   Send Message
                 </button>
-              </form>
+              </div>
             </div>
           </div>
         </div>
@@ -592,7 +604,7 @@
     </main>
     <footer class="bg-[#111]">
       <div class="container mx-auto px-4 lg:px-6 py-[100px]">
-        <div class="grid grid-cols-4 gap-[30px] text-white">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[30px] text-white">
           <div class="logo">
             <img class="mb-[20px]" src="./images/logo.png" alt="" />
             <p class="text-[#CFCFCF]">
@@ -629,7 +641,7 @@
               Subscribe for our latest & Articles. We Won’t Give You Spam Mails
             </p>
             <div class="relative">
-              <input type="text" class="p-[23px] text-black focus:outline-none rounded-lg" placeholder="Enter Your Email"/>
+              <input type="text" class="p-[23px] text-black focus:outline-none rounded-lg w-[100%]" placeholder="Enter Your Email"/>
               <div class="absolute right-0 top-0">
                 <button class="px-[23px] py-[16px] bg-[#B68C5A] text-[25px] rounded-lg"><i class="fa-solid fa-paper-plane"></i></button>
               </div>
@@ -641,15 +653,4 @@
   </body>
 </html>
 
-<!-- <div class="dropdown lg:hidden">
-    <div tabindex="0" role="button" class="btn btn-ghost">
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-    </div>
-    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-      <li>Home</li>
-      <li>Home</li>
-      <li>Home</li>
-      <li>Home</li>
-      <li>Home</li>
-    </ul>
-  </div> -->
+
